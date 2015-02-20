@@ -1,0 +1,75 @@
+html { height: 100%;}
+
+		body {
+			height: 100%;
+			background: linear-gradient(#EEE, white 33%, white 66%, #EEE);
+		}
+
+		div.container {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			-webkit-justify-content: center;
+			align-items: center;
+		}
+
+		div.inner {
+			margin-left: auto;
+			margin-right: auto;
+			width: 250px;
+		}
+
+		div.staticTitle {
+			color: #424242;
+			font-size: 32pt;
+			font-family: Roboto, sans-serif;
+			font-weight: 100;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		.bob {
+			-webkit-animation: bob 2s ease-in-out 1s infinite alternate;
+			animation: bob 2s ease-in-out 1s infinite alternate;
+			-moz-animation: bob 2s ease-in-out 1s infinite alternate;;
+			}
+
+		@keyframes bob {
+			0% {
+				transform: translateY(0%);
+			}
+			50% {
+				transform: translateY(2%);
+			}
+			100% {
+				transform: translateY(0%);
+			}
+		}
+
+		@-webkit-keyframes bob {
+			0% {
+				-webkit-transform: translateY(0%);
+			}
+			50% {
+				-webkit-transform: translateY(2%);
+			}
+			100% {
+				-webkit-transform: translateY(0%);
+			}
+		}
+
+		.bobShadow {
+			
+		}
+
+
+		#logo {
+			height: 200px;
+			width: 200px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 5px;
+			background: url("http://i.imgur.com/QP30l4f.png") no-repeat center;
+			background-size: contain;
+		}
